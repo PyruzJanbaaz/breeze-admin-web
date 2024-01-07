@@ -7,18 +7,13 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { RouterModule } from '@angular/router'; 
+import { RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
-
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +22,7 @@ import { TableModule } from 'primeng/table';
     StoreRouterConnectingModule.forRoot(),
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule, 
+    RouterModule,
     ButtonModule,
     TableModule
   ],
