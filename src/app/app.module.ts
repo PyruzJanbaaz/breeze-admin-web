@@ -7,13 +7,11 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatMenuModule } from '@angular/material/menu';
 import { HeaderComponent } from './header/header.component';
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { FooterComponent } from './footer/footer.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { RouterModule } from '@angular/router'; 
+import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
 
 
 @NgModule({
@@ -29,11 +27,9 @@ import { RouterModule } from '@angular/router';
     StoreRouterConnectingModule.forRoot(),
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatMenuModule,
     RouterModule, 
-    SidebarComponent
+    ButtonModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
