@@ -2,3 +2,64 @@
 
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+
+  /* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #fafafa;
+    border-bottom: 0.1rem #eee solid;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Sidebar Styles */
+aside {
+    background-color: #fafafa;
+    border-right: 0.1rem #eee solid;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 5rem; /* Adjust based on your header height */
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    display: block;
+    border-bottom: 0.1rem solid #f0f0f0;
+}
+
+
+/* Content Styles */
+main {
+    margin: 5rem 1rem 1rem 18rem; /* Adjust based on your sidebar width */
+    padding: 0.5rem;
+    background-color: #fff;
+    border: 0.1rem solid #eee;
+    height: 800px;
+    border-radius: 0.2rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #fff;
+    border-top: 0.1rem #eee solid;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
