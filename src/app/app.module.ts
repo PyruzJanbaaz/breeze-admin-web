@@ -11,15 +11,17 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
+import { CategoryModule } from './pages/category/category.module';
+import { DashboardModule } from './pages/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent
+    AppComponent
   ],
   imports: [
+    HeaderComponent,
+    SidebarComponent,
+    FooterComponent,
     BrowserModule,
     StoreModule.forRoot({}, {}),
     EffectsModule.forRoot([]),
@@ -27,6 +29,8 @@ import { RouterModule } from '@angular/router';
     AppRoutingModule,
     BrowserAnimationsModule,
     RouterModule,
+    DashboardModule,
+    CategoryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
